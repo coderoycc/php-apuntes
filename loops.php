@@ -72,6 +72,16 @@
     foreach ($arrayMultidimensional as $key => $value) {
       echo "<p>El valor de <b>$key</b> es: $value[0] $value[1] $value[2] </p>";
     }
+
+    // Iteracion de un array multidimensional con foreach anidado
+    echo "<h2>Ciclo FOREACH con array multidimensional con foreach anidado</h2>";
+    foreach ($arrayMultidimensional as $key => $values) {
+      echo "<p>El valor de <b>$key</b> es: ";
+      foreach ($values as $value) {
+        echo "$value ";
+      }
+      echo "</p>";
+    }
   ?>
 </body>
 </html>
