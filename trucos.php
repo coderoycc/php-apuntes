@@ -24,5 +24,8 @@ $contenido = serialize($datos);
 $cont = unserialize($contenido);
 
 
-
+#Leemos un archivo con los datos de configuracion
+$config = include_once('./config.php');
+echo $config['nombre'].' ';
+echo $config['apellido'];
 ?>
